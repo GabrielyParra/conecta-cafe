@@ -13,4 +13,7 @@ public class Tag
     [Required(ErrorMessage ="Por favor, informe o nome")]
     [StringLength(30,ErrorMessage = "O nome deve possuir no máximo 30 caracteres")]
     public string Nome { get; set; }
+
+    public ICollection<BlogTag> BlogTags { get; set; }
+    
 }

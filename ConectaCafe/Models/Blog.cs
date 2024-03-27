@@ -22,5 +22,7 @@ public class Blog
     public string Foto { get; set; }
 
     [Display(Name = "Data de Cadastro")]
-    public DateTime Telefone { get; set; }
+    public DateTime DataBlog { get; set; }
+
+    public ICollection<BlogTag> BlogTags { get; set; }
 }
