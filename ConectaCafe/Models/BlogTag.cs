@@ -12,7 +12,7 @@ public class BlogTag
     public Blog Blog { get; set; }
 
     [Key, Column(Order = 2)]
-    public int TaggId { get; set; }
+    public int TagId { get; set; }
     [ForeignKey("TagId")]
     public Tag Tag { get; set; }
 }
